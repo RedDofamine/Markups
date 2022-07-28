@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Machines</title>
+	<link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header__container">
+			<!-- <img src="#0" alt="logo" class="logo"> -->
+			<div class="header__top">
+				<a href="#0" class="header__logo">VMZ</a>
+				<div class="user">
+					<img src="/public/img/images.jpeg" alt="profile image" class="user__photo user__photo_disable">
+					<div class="user__wrapper">
+						<span class="user__name">username</span>
+						<div class="user__buttons">
+							<a href="#0" class="user__button">edit</a>
+							<a href="#0" class="user__button">logout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__botton">
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item"><a href="#0" class="navigation__link">Tools</a></li>
+						<li class="navigation__item"><a href="#0" class="navigation__link">Machines</a></li>
+						<li class="navigation__item"><a href="#0" class="navigation__link">Details</a></li>
+						<li class="navigation__item"><a href="#0" class="navigation__link">Utilities</a></li>
+					</ul>
+				</nav>
+				<form class="header__search" action="#0" method="get">
+					<input class="header__search-input" type="search" placeholder="search across site">
+					<button class="header__search-button" type="submit">Find</button>
+				</form>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="machines-section">
+			<aside class="machine-filter">
+				<input class="machine-filter__search" type="search" placeholder="search by name">
+				<ul class="machine-filter__list">
+					<li class="machine-filter__item">Detail min size <input class="machine-filter__range" type="range"
+							name="detailMin"></li>
+					<li class="machine-filter__item">Detail max size <input class="machine-filter__range" type="range"
+							name="detailMax"></li>
+					<li class="machine-filter__item">group 3 <input class="machine-filter__checkbox" type="checkbox"
+							name="group3"></li>
+					<li class="machine-filter__item">group 4 <input class="machine-filter__checkbox" type="checkbox"
+							name="group4"></li>
+					<li class="machine-filter__item">group 5 <input class="machine-filter__checkbox" type="checkbox"
+							name="group5"></li>
+					<li class="machine-filter__item">group 11 <input class="machine-filter__checkbox" type="checkbox"
+							name="group11"></li>
+			</aside>
+			<article class="machine-card">
+				<img class="machine-card__img" src="/public/img/images.jpeg" alt="image">
+				<h3 class="machine-card__title">Machine name</h3>
+				<span class="machine-card__group">Active in group:</span>
+				<ul class="machine-card__list">
+					<li class="machine-card__item">group</li>
+					<li class="machine-card__item">group</li>
+					<li class="machine-card__item">group</li>
+					<li class="machine-card__item">group</li>
+				</ul>
+				<p class="machine-card__description">Descriptio Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Officia omnis obcaecati debitis
+					provident cumque mollitia, quibusdam voluptas consectetur ratione nesciunt veritatis sapiente eius iure
+					quas.</p>
+				<button class="machine-card__button">Read</button>
+			</article>
+		</section>
+		<section class="author-section">
+			<article class="contact-form">
+				<h2 class="contact-form__title">Contact Author</h2>
+				<form class="contact-form__form" action="#0" method="post">
+					<input class="contact-form__input" type="text" name="name" placeholder="name">
+					<input class="contact-form__email" type="email" name="email">
+					<input class="contact-form__description" type="text" name="" placeholder="descriotion">
+					<input class="contaction-form__submit" type="submit" value="Send note">
+				</form>
+			</article>
+		</section>
+	</main>
+	<footer class="footer">
+		<!-- ! Реалізувати панель з маленькими плитками як в edu grids де відображаються останні зроблені програми та останні новини. Також реалізувати форум, навчальну платформу і систему для зберігання і адміністрування файлів з онлайн конвкртером ffmpeg -->
+		<p class="footer__text">developed and supported by dofamine.<br>All rights reserved.</p>
+	</footer>
+</body>
+
+</html>
