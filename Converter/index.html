@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Converter</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="logo">Youtube Converter</h1>
+	</header>
+	<main class="main">
+		<article class="ads">here's you can post your ads</article>
+		<section class="content">
+			<form class="find content__find" action="#0" method="post">
+				<input class="find__input" type="text" name="url" placeholder="paste here url">
+				<button class="find__button" type="submit">find</button>
+			</form>
+			<article class="convert content__convert">
+				<img class="convert__img" src="image.jpg" alt="image">
+				<div class="convert__wrap">
+					<h2 class="convert__title">Title</h2>
+					<p class="card__duration">Duration: 00:04:25</p>
+					<form class="convert__form" action="#0" method="post">
+						<select class="convert__select" name="bitrate">
+							<option class="convert__option" value="320">320 kbps</option>
+							<option class="convert__option" value="256">256 kbps</option>
+							<option class="convert__option" value="192">192 kbps</option>
+							<option class="convert__option" value="128">128 kbps</option>
+							<option class="convert__option" value="96">96 kbps</option>
+							<option class="convert__option" value="64">64 kbps</option>
+						</select>
+						<button id="convert__button" class="convert__button" type="submit">convert</button>
+					</form>
+					<!-- <button id="convert__button" class="convert__button" type="button">convert</button> -->
+				</div>
+			</article>
+		</section>
+		<article class="ads">here's you can post your ads</article>
+	</main>
+	<footer class="footer">
+		<p class="footer__text">
+			Developed & Provided by Dofamine
+		</p>
+		<ul class="footer__list">
+			<li class="footer__item">Facebook</li>
+			<li class="footer__item">Telegram</li>
+			<li class="footer__item">Instagram</li>
+			<li class="footer__item">Linkedin</li>
+		</ul>
+	</footer>
+	<div id="modal" class="modal">
+		<p class="modal__message">Please wait untill your file will be done after proggress bar be full.</p>
+		<progress class="modal__progress" value="20" max="100"></progress>
+		<a class="modal__download" href="#0" download>download</a>
+	</div>
+
+	<script>
+
+		var modal = document.getElementById("modal");
+
+		var btn = document.getElementById("convert__button");
+
+		btn.onclick = function () {
+			modal.style.display = "flex";
+			event.preventDefault();
+		}
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+</body>
+
+</html>
